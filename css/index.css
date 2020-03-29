@@ -60,4 +60,29 @@ main {
 #button-contacts {
     font-size: 24px;
     padding: 30px;
+    font-weight: bold;
+}
+/*
+#navcont {
+    float: left;
+}
+*/
+#projects {
+    font-size: 24px;
+	line-height: 1.5;
+	padding: 30px;
+}
+#feedback {
+    font-size: 24px;
+	line-height: 1.5;
+	padding: 30px;
+}
+footer {
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.5;
+}
+footer p {
+    font-size: 18px;
+    background-color: gray;
 }
