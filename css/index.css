@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgba(224, 224, 224, 0.966)
+}
+header {
+    width: 63;
+    margin: 1px 1px 1px 1px;
+    padding: 20px 1px 1px 1px;
+}
+#icon {
+    float: left;
+    margin-left: 11px
+}
+#logo1 a {
+    margin-left: 0px;
+    float: left;
+    font-weight: bold;
+    font-size: 27px;
+    text-decoration: none;
+} 
+#logo2 {
+    margin-left: 1px;
+    float: left;
+    font-weight: bold;
+    font-size: 14px;
+} 
+nav {
+    float: right;
+    overflow: hidden;
+}
+nav li {
+    float: left;
+    list-style: none;
+}
+nav li a {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black;
+}
+nav li a:hover {
+    color: orange;
+}
+main {
+    text-align: center;
+}
+#home {
+    margin: 30px 1px 1px 30px;
+    padding: 30px;
+}
+#services {
+    font-size: 24px;
+	line-height: 1.5;
+	padding: 30px;
+}
+#button-contacts {
+    font-size: 24px;
+    padding: 30px;
+}
