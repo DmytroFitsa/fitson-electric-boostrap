@@ -1,4 +1,13 @@
-*{
+@import url(http://uk.allfont.net/allfont.css?fonts=comic-sans-ms);
+:root {
+    font-family: 'Comic Sans MS', arial;
+    --main-color: rgb(75, 75, 75);
+    --accent-color: rgb(230, 230, 230)
+    color: var(--main-color);
+    scroll-behavior: smooth;
+    }
+
+/**{
     margin: 0;
     padding: 0;
 }
@@ -80,4 +89,4 @@ footer {
 footer p {
     font-size: 18px;
     background-color: gray;
-}
+}*/
