@@ -1,25 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 :root {
     font-family: 'Pangolin', cursive;
-    --main-color: rgb(75, 75, 75);
-    --accent-color: rgb(230, 230, 230)
+    --main-color: rgb(240, 240, 240);
+    --accent-color: rgb(230, 230, 230);
     color: var(--main-color);
     scroll-behavior: smooth;
     }
-
-/**{
+body {
+    background-color: rgba(100, 100, 100);
+    max-width: 980px;
+    margin: auto;
+}
+h1, h2, h3, p{
     margin: 0;
     padding: 0;
 }
-body {
-    background: rgba(224, 224, 224, 0.966)
+header div {
+    font-size: 30px;
+    text-align: left; 
+}
+header div div span{
+    font-size: 15px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+header nav .top-menu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+header nav .top-menu li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--main-color);
+    padding: 5px;
+    border: 1px solid transparent;
+}
+header nav .top-menu li a:hover {
+    border: 1px solid var(--main-color);
+}
+@media (min-width: 500px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+    header .top-menu {
+        flex: 1;
+    }
 }
 header {
-    width: 63;
-    margin: 1px 1px 1px 1px;
-    padding: 20px 1px 1px 1px;
+    background-image: url(../img/elec.jpg);
+     background-position: center;
+    background-size: cover;
+    min-height: 574px;
 }
-#icon {
+header .banner {
+    /*background-image: url(../img/elec.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 574px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header .banner .title {
+    color: var(--accent-color);
+    font-size: 20px;
+}
+/*#icon {
     float: left;
     margin-left: 11px
 }
