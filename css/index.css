@@ -1,6 +1,6 @@
-@import url(http://uk.allfont.net/allfont.css?fonts=comic-sans-ms);
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 :root {
-    font-family: 'Comic Sans MS', arial;
+    font-family: 'Pangolin', cursive;
     --main-color: rgb(75, 75, 75);
     --accent-color: rgb(230, 230, 230)
     color: var(--main-color);
