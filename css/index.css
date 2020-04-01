@@ -2,37 +2,44 @@
 :root {
     font-family: 'Pangolin', cursive;
     --main-color: rgb(240, 240, 240);
-    --accent-color: rgb(230, 230, 230);
+    
     color: var(--main-color);
     scroll-behavior: smooth;
     }
 body {
     background-color: rgba(100, 100, 100);
-    max-width: 980px;
     margin: auto;
 }
 h1, h2, h3, p{
     margin: 0;
     padding: 0;
 }
-header div {
+header nav div {
     font-size: 30px;
     text-align: left; 
 }
-header div div span{
+header nav div span a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--main-color);
+}
+header nav div p{
     font-size: 15px;
+    font-weight: bold;
     margin-left: 15px;
     text-decoration: none;
 }
 header nav .top-menu {
     display: flex;
-    justify-content: space-around;
     list-style: none;
+    justify-content: space-around;
     padding: 0;
-}
+    /*margin-right: 20px;*/
+    /*justify-content: flex-end;*/    
+    }
 header nav .top-menu li a {
     font-size: 20px;
-    text-decoration: none;
+    /*text-decoration: none;*/
     color: var(--main-color);
     padding: 5px;
     border: 1px solid transparent;
@@ -51,23 +58,49 @@ header nav .top-menu li a:hover {
 }
 header {
     background-image: url(../img/elec.jpg);
-     background-position: center;
+    background-position: center;
     background-size: cover;
     min-height: 574px;
 }
 header .banner {
     /*background-image: url(../img/elec.jpg);
     background-position: center;
-    background-size: cover;
-    min-height: 574px;*/
+    background-size: cover;*/
+    min-height: 574px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
 }
 header .banner .title {
     color: var(--accent-color);
     font-size: 20px;
+}
+.button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.3s;
+    background-color: transparent;
+    margin-bottom: 40px;
+}
+
+.button:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+@media (min-width: 500px) {
+    header .banner {
+        background-position: top;
+    }
 }
 /*#icon {
     float: left;
