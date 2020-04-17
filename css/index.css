@@ -6,11 +6,25 @@
     color: var(--main-color);
     scroll-behavior: smooth;
     }
+.smooth{
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Pangolin', cursive;
     background-color: rgb(221, 221, 221);
     margin: auto;
 }
+.phoneIcon{
+    width: 55px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+/* .phoneIcon{
+    position: fixed;
+    bottom: 20px;
+    right: 330px;
+} */
 /* h1, h2, h3, p{
     margin: 0;
     padding: 0;
@@ -196,9 +210,14 @@ footer {
 .userData{
     width: 300px;
 }
-
-footer p {
+footer div form button{
+    margin-left: 200px;
+}
+footer .endline {
     clear: left;
     font-size: 18px;
-    background-color: gray;
+    background-color: rgb(172, 172, 172);
+}
+footer div p{
+    float: right;
 }

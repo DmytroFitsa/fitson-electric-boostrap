@@ -13,6 +13,33 @@
 </head>
 <body>
     <header class="container">
+        
+        <!-- Button trigger modal-->
+        <img class="phoneIcon" src="img/phone-icon.png" alt="Дзвоніть" data-toggle="modal" data-target="#ourContacts">
+        <!-- Modal -->
+        <div class="modal fade" id="ourContacts" tabindex="-1" role="dialog" aria-labelledby="ourContactsLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ourContactsLabel">Телефон менеджера:</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <b>38(067) 696 33 50</b>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!-- <a href="#contacts">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Наші контакти</button>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!--<div id="main-logo">
             <img id="icon" src="img/icons-fitson-electric.png" alt="Логотип" width="32">
             <span><a href="index.html">FITSON-electric</a></span>
@@ -233,8 +260,10 @@
                 <!-- <input type="submit" value="Відправити"> -->
             </form>
         </div>
-            <p class="endline">FITSON-eleсtriс inc. 2020</p>
-        
+        <div class="endline">
+            <p>FITSON-eleсtriс inc. 2020</p>
+            <div class="clock"></div>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -246,6 +275,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
         </script>
+    <script src="js/index.js"></script>
 
 </body>
 </html>
