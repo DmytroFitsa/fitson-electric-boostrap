@@ -7,12 +7,17 @@
     scroll-behavior: smooth;
     }
 body {
-    background-color: rgba(100, 100, 100);
+    font-family: 'Pangolin', cursive;
+    background-color: rgb(221, 221, 221);
     margin: auto;
 }
-h1, h2, h3, p{
+/* h1, h2, h3, p{
     margin: 0;
     padding: 0;
+} */
+h1, h2, h3{
+    margin: 0;
+    padding: 15px;
 }
 header nav div {
     font-size: 30px;
@@ -24,6 +29,7 @@ header nav div span a {
     color: var(--main-color);
 }
 header nav div p{
+    color: white;
     font-size: 15px;
     font-weight: bold;
     margin-left: 15px;
@@ -73,7 +79,7 @@ header .banner {
     flex-direction: column;
 }
 header .banner .title {
-    color: var(--accent-color);
+    color: white;
     font-size: 20px;
 }
 .button {
@@ -102,6 +108,12 @@ header .banner .title {
         background-position: top;
     }
 }
+
+
+/* .contacts .forms{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} */
 /*#icon {
     float: left;
     margin-left: 11px
@@ -168,8 +180,25 @@ footer {
     text-align: center;
     font-size: 24px;
     line-height: 1.5;
+}*/
+#button-contacts {
+    font-size: 24px;
+    padding: 30px;
+    font-weight: bold;
+    text-align: center;
 }
+.contacts{
+    float: left;
+}
+.forms{
+    float: right;
+}
+.userData{
+    width: 300px;
+}
+
 footer p {
+    clear: left;
     font-size: 18px;
     background-color: gray;
-}*/
+}

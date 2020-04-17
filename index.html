@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FITSON-electric</title>
     <link rel="icon" href="img/icons-fitson-electric.png">
-    <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header class="container">
@@ -31,7 +32,7 @@
             <ul class="top-menu">
                 <li><a href="#home">Головна</a></li>
                 <li><a href="#services">Послуги</a></li>
-                <li><a href="#projects">Проекти</a></li>
+                <li><a href="#carouselOurProjects">Проекти</a></li>
                 <li><a href="#contacts">Контакти</a></li>
             </ul>
         </nav>
@@ -44,9 +45,9 @@
         </section>
     </header>
     <main class="container">
-
-        <h1>Наші послуги:</h1>
-        <div class="row">
+<!-- OUR SERVICES -->
+        <h2>Наші послуги:</h2>
+        <div id="services" class="row">
             <article class="card col-11 col-sm-7 col-md-5 col-lg-4">
                 <img src="img/install-elec.jpg" class="card-img-top" alt="Монтаж електрики">
                 <div class="card-body">
@@ -73,6 +74,7 @@
             </article>
             <article class="card col-11 col-sm-7 col-md-5 col-lg-4">
                 <img src="img/video-install.jpg" class="card-img-top" alt="Відеонагляд">
+                <!-- <img src="..." alt="..." class="rounded-pill"> -->
                 <div class="card-body">
                     <p class="card-text">Відеонагляд</p>
                 </div>
@@ -99,17 +101,19 @@
                 <!-- <input type="button" value="Наші контакти:"> -->
             </a>
         </div>
-        <!-- CAROUSEL -->
-        <h2>Наші проекти:</h2>
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+<!-- PROJECTS CAROUSEL -->
+        
+        <div id="carouselOurProjects" class="carousel slide" data-ride="carousel">
+            <h2>Наші проекти:</h2>
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+                <li data-target="#carouselOurProjects" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselOurProjects" data-slide-to="1"></li>
+                <li data-target="#carouselOurProjects" data-slide-to="2"></li>
+                <li data-target="#carouselOurProjects" data-slide-to="3"></li>
+                <li data-target="#carouselOurProjects" data-slide-to="4"></li>
+                <li data-target="#carouselOurProjects" data-slide-to="5"></li>
+                <li data-target="#carouselOurProjects" data-slide-to="6"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -155,11 +159,11 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselOurProjects" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselOurProjects" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
@@ -170,17 +174,45 @@
             <img src="img/projects.jpg" alt="Проекти" width="431">
         </section> -->
 
-        
-
-        <section id="feedback">
+<!-- FEEDBACKS -->
+        <h2>Відгуки клієнтів:</h2>
+        <div class="row">
+            <article class="card col-11 col-sm-7 col-md-5 col-lg-4">
+                <img src="img/client-Galyna.jpg" class="card-img-top" alt="Монтаж електрики">
+                <div class="card-body">
+                    <h5>п. Галина</h5>
+                    <p class="card-text">Електромонтажні роботи у однокімнатній квартирі потрібно було зробити терміново. Спеціалісти з FITSON-electric приїхали зі
+                    всіма матеріалами і за один день надійно зробили всі роботи. Задоволений за комплексне обслуговування! Дякую!</p>
+                </div>
+            </article>
+            <article class="card col-11 col-sm-7 col-md-5 col-lg-4">
+                <img src="img/client-Jaroslav.jpg" class="card-img-top" alt="Схема електропроводки">
+                <div class="card-body">
+                    <h5>Ярослав</h5>
+                    <p class="card-text">Хлопці міняли всю електропроводку в моєму будинку, оскільки стара майже нічого не витримувала і постійно вибивали
+                    автомати. Закінчили за тиждень. За собою прибрали і вивезли мішки зі сміттям. Загалом
+                    приємні люди, рекомендую!</p>
+                </div>
+            </article>
+            <article class="card col-11 col-sm-7 col-md-5 col-lg-4">
+                <img src="img/client-Tetjana.jpg" class="card-img-top" alt="Електрощиток">
+                <div class="card-body">
+                    <h5>Тетяна</h5>
+                    <p class="card-text">Зручно, бо не потрібно нічим морочити голову. Зробили все в комплексі: електричну проводку, сигналізацію, домофон,
+                    телебачення та інтернет. Не потрібно шукати додаткових спеціалістів на кожен вид робіт. Одним словом спеціалісти своєї
+                    справи. Рекомендую!</p>
+                </div>
+            </article>
+        </div>
+        <!-- <section id="feedback">
             <h2>Відгуки клієнтів:</h2>
             <img src="img/client.jpg" alt="клієнт" width="250">
             <br>
             <p id="feedback1">Відгук</p>
-        </section>
+        </section> -->
     </main>
-    <footer>
-        <div id="contacts">
+    <footer class="container">
+        <div id="contacts" class="contacts">
             <h2>Контакти FITSON-eleсtriс:</h2>
             <ul>
                <li>Зв’яжіться з нами:</li>
@@ -191,16 +223,18 @@
                <li><b>fitson@i.ua</b></li>
             </ul>
         </div>
-        <div>
+        <div class="forms">
             <h2>Або напишіть нам:</h2>
-            <form action="">
-                <input type="text" placeholder="Ваше імя" required><br>
-                <input type="email" placeholder="Email адреса" required><br>
-                <textarea name="message" placeholder="Ваше повідомлення"></textarea><br>
-                <input type="submit" value="Відправити">
+            <form action="https://formspree.io/mrgldwgr" method="POST">
+                <input type="text" class="userData" placeholder="Ваше імя" required><br>
+                <input type="email" class="userData" placeholder="Email адреса" required><br>
+                <textarea name="message" class="userData" placeholder="Ваше повідомлення"></textarea><br>
+                <button type="submit" class="btn btn-outline-dark">Відправити</button>
+                <!-- <input type="submit" value="Відправити"> -->
             </form>
         </div>
-        <p>FITSON-eleсtriс inc. 2020</p>
+            <p class="endline">FITSON-eleсtriс inc. 2020</p>
+        
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
